@@ -93,7 +93,7 @@ body {
   background:url(../img/body-bg.png);
 }
 
-h2, h3 {
+h2, h3, .priceLabel, .priceInput {
   font-family:'SketchetikLight';
   color:#28263f;
 }
@@ -111,14 +111,14 @@ h2, h3 {
 
 h2 {
   margin:0;
-  font-size:60px;
+  font-size:53px;
 
 }
 
 section {
   width:310px;
   float:left;
-  padding: 15px 0 0 10px;
+  padding: 6px 0 0 10px;
 }
 
 section h3 {
@@ -141,8 +141,13 @@ section h3 {
 }
 
 .listen {
-  height:370px;
-  overflow:auto;
+  height:387px;
+  overflow:hidden;
+  padding:0;
+}
+
+.listen a {
+  color:#fff;
 }
 
 ul {
@@ -161,7 +166,27 @@ li.date {
   font-weight:bold;
 }
 
+.purchase h3 {
+  font-size: 23px;
+}
 
+form {
+  height:75px;
+  overflow:auto;
+}
+
+.priceLabel, .priceInput {
+  font-size:24px;
+}
+
+.priceInput {
+  padding:8px;
+  width: 180px;
+}
+
+.checkoutBtn {
+  vertical-align: bottom;
+}
 
 
 /* ==|== non-semantic helper classes ======================================== */

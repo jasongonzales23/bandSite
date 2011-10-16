@@ -28,25 +28,27 @@
       
     </header>
     <div id="main" role="main">
-      <h2>Download Our Album</h2>
+      <h2 class="buyIt">Download Our Album &dArr;</h2>
       <div class="albumCover">
         <img src="img/front-cover.png" alt="front cover of our album.... bitches"/>
       </div>
       <div class="purchase">
+        <h3>Enter whatever price you want to pay and click 'Buy Now'</h3>
+        <p>You will be taken to Google Checkout. Once your payment is processed you will get a link to your download (even if you paid nothing).</p>
         <!-- Google Checkout button with a blank price field -->
         <form action="https://checkout.google.com/api/checkout/v2/checkoutForm/Merchant/758031506564251" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" target="_top">
           <input name="item_name_1" type="hidden" value="The Regionals"/>
           <input name="item_description_1" type="hidden" value="This is an MP3 download of the The Regionals first album."/>
           <input name="item_quantity_1" type="hidden" value="1"/>
-          Price: $
-          <input type="text" name="item_price_1"/>
+          <label class="priceLabel" for="item_price_1">I want to pay: $</label>
+          <input class="priceInput" type="text" name="item_price_1" placeholder="Name Your Price"/>
           <input name="item_currency_1" type="hidden" value="USD"/>
           <input name="shopping-cart.items.item-1.digital-content.description" type="hidden" value="Click the link below to start downloading!"/>
           <input name="shopping-cart.items.item-1.digital-content.key" type="hidden" value="88dNCL7EwJyWh1J8iJPeedOBNBCnlpluzfQQeLBuN80="/>
           <input name="shopping-cart.items.item-1.digital-content.key.is-encrypted" type="hidden" value="true"/>
           <input name="shopping-cart.items.item-1.digital-content.url" type="hidden" value="http://theregionalswastaken.com/album/TheRegionals.zip"/>
           <input name="_charset_" type="hidden" value="utf-8"/>
-          <input alt="" src="https://checkout.google.com/buttons/buy.gif?merchant_id=758031506564251&amp;w=117&amp;h=48&amp;style=trans&amp;variant=text&amp;loc=en_US" type="image"/>
+          <input class="checkoutBtn" alt="Buy our album by clicking here." src="https://checkout.google.com/buttons/buy.gif?merchant_id=758031506564251&amp;w=117&amp;h=48&amp;style=trans&amp;variant=text&amp;loc=en_US" type="image"/>
         </form>
 
       </div>
@@ -57,7 +59,7 @@
         <ul>
           <li class="date">Oct 22, 9:00pm</li>
           <li>Hal& Al's w/ Total Foxx & Matt Liller</li>
-          <li class="date">Nov 11 22, 9:00pm</li>
+          <li class="date">Nov 11, 9:00pm</li>
           <li>Rumba with The Twits</li>
           <li class="date">Nov 25, 9:00pm</li>
           <li>Ace of Cups w/ Total Foxx</li>
@@ -65,21 +67,19 @@
       </div>
       <h3>Listen</h3>
       <div class="listen">
-        <ul>
-          <li>Handcramp</li>
-          <li>Museum Ticket</li>
-          <li>Young Gatsby</li>
-          <li>Draft Dodger</li>
-          <li>Tired Metaphor</li>
-          <li>Getout</li>
-          <li>Run</li>
-          <li>Never Mentioned</li>
-          <li>Sadie Hawkins</li>
-          <li>Listen to the Circuits</li>
-          <li>Salvation Army Knife</li>
-          <li>Flooded House</li>
-        </ul>
+        <object height="387" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F857230&amp;show_comments=true&amp;auto_play=false&amp;show_playcount=true&amp;show_artwork=true&amp;color=28263f"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="387" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F857230&amp;show_comments=true&amp;auto_play=false&amp;show_playcount=true&amp;show_artwork=true&amp;color=28263f" type="application/x-shockwave-flash" width="100%"></embed> </object>
       </div>
+      <div class="social">
+          <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like-box" data-href="http://www.facebook.com/TheRegionals" data-width="315" data-show-faces="false" data-stream="false" data-header="false"></div>
+        </div>
     </section>
     <footer>
 
