@@ -60,23 +60,106 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 
 table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
+/*font-face=================================
+*/
+@font-face {
+    font-family: 'SketchetikLight';
+    src: url('sketchetik-light-webfont.eot');
+    src: url('sketchetik-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sketchetik-light-webfont.woff') format('woff'),
+         url('sketchetik-light-webfont.ttf') format('truetype'),
+         url('sketchetik-light-webfont.svg#SketchetikLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
+@font-face {
+    font-family: 'SketchetikLight';
+    src: url('sketchetik-light-webfont.eot');
+    src: url('sketchetik-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sketchetik-light-webfont.woff') format('woff'),
+         url('sketchetik-light-webfont.ttf') format('truetype'),
+         url('sketchetik-light-webfont.svg#SketchetikLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: Jason Gonzales
    ========================================================================== */
 
+body {
+  background:url(../img/body-bg.png);
+}
 
+h2, h3 {
+  font-family:'SketchetikLight';
+  color:#28263f;
+}
 
+#container {
+  width:960px;
+  margin:0 auto;
+}
 
+#main {
+  width:640px;
+  float:left;
+  padding:0 0 60px 0;
+}
 
+h2 {
+  margin:0;
+  font-size:60px;
 
+}
 
+section {
+  width:310px;
+  float:left;
+  padding: 15px 0 0 10px;
+}
 
+section h3 {
+  margin:0;
+  font-size: 48px;
+}
 
+.listen, .shows {
+  background: url(../img/sidebar-bg.png);
+  font-family:Arial, arial, sans-serif;
+  font-size:14px;
+  color:#FFF;
+  padding:20px 0 0 20px;
+}
 
+.shows {
+  height:150px;
+  overflow:auto;
+  margin:0 0 10px 0;
+}
 
+.listen {
+  height:370px;
+  overflow:auto;
+}
 
+ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+li {
+  margin: 0 0 12px 0;
+  line-height: 1em;
+}
+
+li.date {
+  margin:0;
+  font-weight:bold;
+}
 
 
 
