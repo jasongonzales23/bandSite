@@ -188,6 +188,23 @@ form {
   vertical-align: bottom;
 }
 
+.userMsg {
+  background:#FFCB7E;
+  border:1px solid #9D3100;
+  width:590px;
+  padding:20px;
+  margin:0 0 10px 0;
+  font-size:18px;
+  display:none;
+}
+
+.button {
+  padding:3px 5px;
+  background:#BCBCBC;
+  border:1px solid #4F4F4F;
+  text-decoration:none;
+  color:#000;
+}
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
