@@ -126,7 +126,7 @@ section h3 {
   font-size: 48px;
 }
 
-.listen, .shows {
+.listen, .shows, .contact {
   background: url(../img/sidebar-bg.png);
   font-family:Arial, arial, sans-serif;
   font-size:14px;
@@ -136,6 +136,12 @@ section h3 {
 
 .shows {
   height:150px;
+  overflow:auto;
+  margin:0 0 10px 0;
+}
+
+.contact {
+  height:60px;
   overflow:auto;
   margin:0 0 10px 0;
 }
